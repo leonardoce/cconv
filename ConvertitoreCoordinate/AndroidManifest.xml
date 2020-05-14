@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.interfree.leonardoce.iconv"
+    android:versionCode="28"
+    android:versionName="5.0" >
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <!-- necessario per Google Maps -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission
+        android:name="it.interfree.leonardoce.iconv.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="it.interfree.leonardoce.iconv.permission.MAPS_RECEIVE" />
+
+    <supports-screens android:largeScreens="true" />
+
+    <application
+        android:icon="@drawable/favicon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+
+        <activity android:name=".StartupActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputCassiniActivity"
+            android:label="@string/input_cassini_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputGaussActivity"
+            android:label="@string/input_gauss_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputLatLongActivity"
+            android:label="@string/input_latlong_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputWebMercatorActivity"
+            android:label="@string/input_webmercator_titolo"           
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity android:name="it.interfree.leonardoce.convertitorecoordinatelib.RisultatoConversioneActivity" >
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.GestioneOriginiCassiniActivity"
+            android:label="@string/configurazione_cassini_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.SettingsActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.NuovaOrigineCassiniActivity"
+            android:label="@string/configurazione_cassini_nuova_origine_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.GestioneOriginiCassiniActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.GestioneOriginiCassiniActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.ReportRegistroActivity"
+            android:label="@string/report_conversioni_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.GestioneRegistroActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.GestioneRegistroActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.StatoGpsActivity"
+            android:label="@string/registro_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.HelpIconvActivity"
+            android:label="@string/titolo_help"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.GestioneRegistroActivity"
+            android:label="@string/registro_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputUtmActivity"
+            android:label="@string/input_utm_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputMgrsActivity"
+            android:label="@string/input_mgrs_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputED50Activity"
+            android:label="@string/input_ed50_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.InputOSMActivity"
+            android:label="@string/input_osm_titolo"
+            android:parentActivityName="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.interfree.leonardoce.convertitorecoordinatelib.ConvertitoreCoordinateActivity" />
+        </activity>
+        <activity
+            android:name="it.interfree.leonardoce.convertitorecoordinatelib.SettingsActivity"
+            android:label="@string/pag_impostazioni" >
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="it.interfree.leonardoce.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

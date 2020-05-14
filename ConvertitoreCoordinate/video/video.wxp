@@ -1,0 +1,2438 @@
+[ Wax generated project. Do not edit manually!! ]
+Format v2.1
+Workspace
+{
+	ShowGlobalSettingsInTimeline = 0
+	PreviewZoomValue = 0 1 0 0
+}
+Project
+{
+	UsingDummyHostMedia = 0
+	IsPreset = 0
+	Frames = 747 0
+	CellWidth & CellHeight = 2.000000 20.685002
+	Scroll = 0 0
+	Output mode = 0
+	Output frame range = 0 745
+	Tracks = 27
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		1 1 0
+		2 1 0
+		0 1 0
+}
+Video
+{
+	Video file name = video.avi
+	Video file extension = avi
+	Video file filter id = DebugMode AVI File Filter
+	Sequence start = 0
+	Video parameters = 640 480 24.000000
+}
+AVI Video Compression
+{
+	0
+	
+}
+Audio
+{
+	Audio file name = audio.avi
+	Audio file extension = avi
+	Audio file filter id = DebugMode AVI File Filter
+}
+AVI Audio Compression
+{
+	0
+	
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\1.png
+	Folder = /
+	Name = 1.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\7.png
+	Folder = /
+	Name = 7.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\2.png
+	Folder = /
+	Name = 2.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\3.png
+	Folder = /
+	Name = 3.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\4.png
+	Folder = /
+	Name = 4.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\5.png
+	Folder = /
+	Name = 5.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\6.png
+	Folder = /
+	Name = 6.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\device-2011-11-05-193004.png
+	Folder = /
+	Name = device-2011-11-05-193004.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\8.png
+	Folder = /
+	Name = 8.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\9.png
+	Folder = /
+	Name = 9.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\10.png
+	Folder = /
+	Name = 10.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\11.png
+	Folder = /
+	Name = 11.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\12.png
+	Folder = /
+	Name = 12.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\device-2011-11-05-114316.png
+	Folder = /
+	Name = device-2011-11-05-114316.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\device-2011-11-05-114328.png
+	Folder = /
+	Name = device-2011-11-05-114328.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = ..\svg\screenshot\device-2011-11-05-192352.png
+	Folder = /
+	Name = device-2011-11-05-192352.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = prima.png
+	Folder = /
+	Name = prima.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = home.png
+	Folder = /
+	Name = home.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = trasformazione.png
+	Folder = /
+	Name = trasformazione.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = emanazione_cassini.png
+	Folder = /
+	Name = emanazione_cassini.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = registro.png
+	Folder = /
+	Name = registro.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = gps_prima.png
+	Folder = /
+	Name = gps_prima.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = gps_dopo.png
+	Folder = /
+	Name = gps_dopo.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = maps.png
+	Folder = /
+	Name = maps.png.
+	Comment = .
+}
+Clip
+{
+	Type = 1
+	Filename = fine_film.png
+	Folder = /
+	Name = fine_film.png.
+	Comment = .
+}
+Clip
+{
+	Type = 2
+	Filename = colonna.wav
+	Folder = /
+	Name = colonna.wav.
+	Comment = .
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 1
+	TrackPropertiesExpanded = 0
+	Parameters = 0 0 55 100 0 54
+	Filename = prima.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 3 79 71 100 79 149
+	Filename = home.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 1 55 24 100 55 78
+	Filename = prima.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 0.000000 0 0.000000 6 0.000000 23 -180.000000 -6 -180.000000 0 -180.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 2 55 24 100 55 78
+	Filename = home.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 180.000000 0 180.000000 6 180.000000 23 0.000000 -6 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 4 151 24 100 151 174
+	Filename = trasformazione.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = RotoMate
+		Number of Parameters = 56
+		Paintbrush & Eraser
+		0 1 0 0  
+		Shape Tick
+		0 1 0 1.000000 0 1.000000 0 1.000000 
+		Shapes as Mask
+		0 1 0 1 
+		Mask Blur
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Invert Mask
+		0 1 0 0 
+		Handle Tick
+		0 1 0 5000.000000 0 0.000000 0 0.000000 
+		Shape1
+		1 3 0 146 ff02001100000000808080ffffffffff000000000d00565595beebeeae3e640d8dbe1917963e868808bee8dd5dbecdccccbd726666bec70e9dbd64a836be000000b1adaa2a3d8988883cefee6e3d64adef3c8bd37b3defeeee3dfaee6ebe1211113efaee6ebe2e3e243efaee6ebe2222a23e9899993e2222a23e3033b33e0000000005000000060000000a0000000e000000 23 146 ff02001100000000808080fffffffffff5f178430d00ff3ac5bf049b783fabf7babf429d593f2b8841bf8f00d8be2c3b17bfcea5e2bee84bf3be5117a7be2ca2c2bdc3fb633e6c714bbc1548873eb7c94c3d6c4d8b3e5c72f73ecc4aedbee8721b3fcc4aedbeac36333fcc4aedbee8fcb83fdae96b3f7a4cbe3f6e2c7d3f0000000005000000060000000a0000000e000000 23 146 ff02001100000000808080ffffffffff00007a430d0072e8c5bf7fa6773f3b9cbbbf7c784d3f133542bf89b46dbf73c317bf22f374bf3b29f4be946b4cbf4d75c3bd533452bd50764dbca7daac3bdd254d3d15c6823cfb3df83e87317cbf30f41b3f87317cbf88cc333f87317cbf9a99b93f6766663fefeebe3fdedd7d3f0000000005000000060000000a0000000e000000 
+		Shape2
+		0 1 0 0  
+		Shape3
+		0 1 0 0  
+		Shape4
+		0 1 0 0  
+		Shape5
+		0 1 0 0  
+		Shape6
+		0 1 0 0  
+		Shape7
+		0 1 0 0  
+		Shape8
+		0 1 0 0  
+		Shape9
+		0 1 0 0  
+		Shape10
+		0 1 0 0  
+		Shape11
+		0 1 0 0  
+		Shape12
+		0 1 0 0  
+		Shape13
+		0 1 0 0  
+		Shape14
+		0 1 0 0  
+		Shape15
+		0 1 0 0  
+		Shape16
+		0 1 0 0  
+		Shape17
+		0 1 0 0  
+		Shape18
+		0 1 0 0  
+		Shape19
+		0 1 0 0  
+		Shape20
+		0 1 0 0  
+		Shape21
+		0 1 0 0  
+		Shape22
+		0 1 0 0  
+		Shape23
+		0 1 0 0  
+		Shape24
+		0 1 0 0  
+		Shape25
+		0 1 0 0  
+		Shape26
+		0 1 0 0  
+		Shape27
+		0 1 0 0  
+		Shape28
+		0 1 0 0  
+		Shape29
+		0 1 0 0  
+		Shape30
+		0 1 0 0  
+		Shape31
+		0 1 0 0  
+		Shape32
+		0 1 0 0  
+		Shape33
+		0 1 0 0  
+		Shape34
+		0 1 0 0  
+		Shape35
+		0 1 0 0  
+		Shape36
+		0 1 0 0  
+		Shape37
+		0 1 0 0  
+		Shape38
+		0 1 0 0  
+		Shape39
+		0 1 0 0  
+		Shape40
+		0 1 0 0  
+		Shape41
+		0 1 0 0  
+		Shape42
+		0 1 0 0  
+		Shape43
+		0 1 0 0  
+		Shape44
+		0 1 0 0  
+		Shape45
+		0 1 0 0  
+		Shape46
+		0 1 0 0  
+		Shape47
+		0 1 0 0  
+		Shape48
+		0 1 0 0  
+		Shape49
+		0 1 0 0  
+		Shape50
+		0 1 0 0  
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 5 151 24 100 151 174
+	Filename = home.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 6 175 65 100 175 239
+	Filename = trasformazione.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 7 240 24 100 240 263
+	Filename = trasformazione.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 0.000000 0 0.000000 6 0.000000 23 -180.000000 -6 -180.000000 0 -180.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 8 240 24 100 240 263
+	Filename = emanazione_cassini.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 180.000000 0 180.000000 6 180.000000 23 0.000000 -6 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 9 264 72 100 264 335
+	Filename = emanazione_cassini.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 10 336 24 100 336 359
+	Filename = emanazione_cassini.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 0.000000 0 0.000000 6 0.000000 23 -180.000000 -6 -180.000000 0 -180.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 11 336 24 100 336 359
+	Filename = registro.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 180.000000 0 180.000000 6 180.000000 23 0.000000 -6 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 12 360 72 100 360 431
+	Filename = registro.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 13 432 24 100 432 455
+	Filename = registro.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 0.000000 0 0.000000 6 0.000000 23 -180.000000 -6 -180.000000 0 -180.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 14 432 24 100 432 455
+	Filename = gps_prima.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 180.000000 0 180.000000 6 180.000000 23 0.000000 -6 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 15 456 72 100 456 527
+	Filename = gps_prima.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 16 528 24 100 528 551
+	Filename = gps_prima.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Shatter
+		Number of Parameters = 9
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Fragment Size
+		0 1 0 0.100000 0 0.000000 0 0.000000 
+		Force
+		1 2 0 0.000000 0 0.000000 0 0.000000 23 2.000000 0 2.000000 0 2.000000 
+		Force Method
+		0 1 0 1 
+		Gravity
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Bulge
+		0 1 0 0 
+		Random Rotate
+		1 2 0 0.000000 0 0.000000 0 0.000000 23 23.584000 0 23.584000 0 23.584000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 9 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 17 528 24 100 528 551
+	Filename = gps_dopo.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 18 551 51 100 551 601
+	Filename = gps_dopo.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 19 602 24 100 602 625
+	Filename = gps_dopo.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 0.000000 0 0.000000 6 0.000000 23 -180.000000 -6 -180.000000 0 -180.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 20 602 24 100 602 625
+	Filename = maps.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Position Z
+		0 1 0 0.002000 0 0.002000 0 0.002000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		2 2 0 180.000000 0 180.000000 6 180.000000 23 0.000000 -6 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 -0.002000 0 -0.002000 0 -0.002000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		0 1 0 0 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 21 626 43 100 626 668
+	Filename = maps.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 22 669 24 100 669 692
+	Filename = maps.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 1
+		Name = Transform 3D
+		Number of Parameters = 12
+		Position X
+		2 1 7 0.000000 0 0.000000 0 0.000000 
+		Position Y
+		2 8 7 0.000000 0 0.000000 0 0.000000 9 0.640000 0 0.640000 0 0.640000 12 -0.222000 0 -0.222000 0 -0.222000 14 1.571000 0 1.571000 0 1.571000 17 -1.430000 0 -1.430000 0 -1.430000 19 0.783000 0 0.783000 0 0.783000 21 -2.586000 0 -2.586000 0 -2.586000 23 5.748000 0 5.748000 0 5.748000 
+		Position Z
+		2 7 7 0.000000 0 0.000000 0 0.000000 9 -0.288000 0 -0.288000 0 -0.288000 12 -0.696000 0 -0.696000 0 -0.696000 14 -1.938000 0 -1.938000 0 -1.938000 17 -3.714000 0 -3.714000 0 -3.714000 19 -5.875000 0 -5.875000 0 -5.875000 21 -6.679000 0 -6.679000 0 -6.679000 
+		Scale X
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Y
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Scale Z
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Angle X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Angle Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Pivot Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 12 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Objects 3D
+		Number of Parameters = 34
+		Object Type
+		1 2 0 0 6 1 
+		Use Parent Media
+		0 1 0 1 
+		Ambient
+		0 1 0 FFFFFFFF 
+		Diffuse
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Specular
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Shininess
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Slices
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Stacks
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Slice Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Stack Angle
+		0 1 0 180.000000 0 0.000000 0 0.000000 
+		Inner Radius
+		0 1 0 0.500000 0 0.000000 0 0.000000 
+		Outer Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Rings
+		0 1 0 64.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Ring Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Bottom Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Top Radius
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Height
+		0 1 0 2.000000 0 0.000000 0 0.000000 
+		Sides
+		0 1 0 32.000000 0 0.000000 0 0.000000 
+		Side Angle
+		0 1 0 360.000000 0 0.000000 0 0.000000 
+		Use Multiple Inputs
+		0 1 0 0 
+		X Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Z Size
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Front Side Media
+		0 1 0 ffffffff 
+		Back Side Media
+		0 1 0 ffffffff 
+		Left Side Media
+		0 1 0 ffffffff 
+		Right Side Media
+		0 1 0 ffffffff 
+		Top Side Media
+		0 1 0 ffffffff 
+		Bottom Side Media
+		0 1 0 ffffffff 
+		X Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		Y Divisions
+		0 1 0 1.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 3 0 0 0
+		ParamExpandInfo = 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	}
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 23 669 24 100 669 692
+	Filename = fine_film.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 1
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 24 693 54 100 693 746
+	Filename = fine_film.png
+	Stretch = 2
+	Use Alpha Channel = 1
+	Plugin
+	{
+		Type = 5
+		Enabled = 1
+		Expanded = 0
+		Name = Track Properties
+		Number of Parameters = 2
+		Opacity
+		0 1 0 100.000000 0 0.000000 0 0.000000 
+		Compositing Mode
+		0 1 0 0 
+		PageExpandInfo = 1 0
+		ParamExpandInfo = 2 0 0
+	}
+}
+Element
+{
+	Type = 2
+	Enabled = 1
+	Expanded = 0
+	TrackPropertiesExpanded = 0
+	Parameters = 25 0 733 100 0 732
+	Filename = colonna.wav
+}
+Plugin
+{
+	Type = 5
+	Enabled = 1
+	Expanded = 0
+	Parameters = -1 0 746
+	Name = Global Settings
+		Number of Parameters = 11
+		Ambient Color
+		0 1 0 FF404040 
+		Smooth Shading
+		0 1 0 1 
+		Shadows
+		0 1 0 0 
+		View Mode
+		0 1 0 2 
+		Camera X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Camera Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Camera Z
+		0 1 0 2.400000 0 0.000000 0 0.000000 
+		Look At X
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Look At Y
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Look At Z
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		Tumble Angle
+		0 1 0 0.000000 0 0.000000 0 0.000000 
+		PageExpandInfo = 2 0 0
+		ParamExpandInfo = 11 0 0 0 0 0 0 0 0 0 0 0
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+
+	<TableLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0"
+	    android:paddingLeft="10px" android:paddingRight="10px">
+
+	    <TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView android:text="@string/stato_gps_satelliti_attivi"/>
+	        <LinearLayout android:orientation="horizontal">
+		        <TextView android:id="@+id/txtSatellitiUsati"
+		            android:text="0"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:textColor="#00AA00"/>
+		        <TextView
+		            android:text="/"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"/>
+		        <TextView android:id="@+id/txtSatellitiTotali"
+		            android:text="0"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:textColor="#00AAFF"/>
+	        </LinearLayout>
+	    </TableRow>
+	    <TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    </TableRow>
+
+   	    <TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView android:text="@string/stato_gps_precisione"/>
+	        <TextView android:id="@+id/txtPrecisioneUltimoPunto"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:text="n.d."
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"/>
+	    </TableRow>
+	    <TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView android:text="@string/stato_gps_ultimo_punto"/>
+            <TextView android:id="@+id/txtUltimoPunto"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:layout_width="fill_parent"
+                android:singleLine="false"
+                android:layout_height="wrap_content"/>
+	    </TableRow>
+   	</TableLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView android:text="@string/stato_gps_heading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingRight="10dp"/>
+        <TextView android:id="@+id/txtHeading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="n.d."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#00AA00" />
+
+    </LinearLayout>
+	<it.interfree.leonardoce.convertitorecoordinatelib.components.RadarView
+   	    android:layout_width="match_parent"
+   	    android:layout_height="fill_parent"
+   	    android:layout_weight="1"
+   	    android:id="@+id/statusRadarView"/>
+    <LinearLayout android:orientation="horizontal"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="10px" android:paddingRight="10px">
+
+    	<Button android:id="@+id/btConvertiAdesso"
+    		android:text="@string/stato_gps_converti"
+    		android:layout_height="match_parent"
+    		android:layout_width="fill_parent"
+    		android:layout_weight="1"/>
+
+    	<Button android:id="@+id/btBolla"
+    		android:text="@string/stato_gps_bolla"
+    		android:layout_height="match_parent"
+    		android:layout_width="fill_parent"
+    		android:layout_weight="1"/>
+
+    	<Button android:id="@+id/btSend"
+    		android:text="@string/stato_gps_send"
+    		android:layout_height="match_parent"
+    		android:layout_width="fill_parent"
+    		android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

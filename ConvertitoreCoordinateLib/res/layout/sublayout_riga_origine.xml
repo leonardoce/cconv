@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+    
+    
+    <RadioButton 
+    	android:layout_height="match_parent"
+    	android:layout_width="wrap_content"
+    	android:paddingRight="10px"
+    	android:id="@+id/rigaSelezionata"/>
+    
+    <TableLayout 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">
+    	<TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+    		<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="@string/configurazione_cassini_nome" android:layout_height="wrap_content" android:layout_marginRight="20px"></TextView>
+    		<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="" android:layout_height="wrap_content" android:id="@+id/rigaNomeOrigine"></TextView>
+    	</TableRow>
+    	<TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+    		<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="@string/configurazione_cassini_lat" android:layout_height="wrap_content" android:layout_marginRight="20px"></TextView>
+    		<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="" android:layout_height="wrap_content" android:id="@+id/rigaLatitudine"></TextView>
+    	</TableRow>
+    	<TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+    		<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="@string/configurazione_cassini_long" android:layout_height="wrap_content" android:layout_marginRight="20px"></TextView>
+    		<TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:text="" android:layout_height="wrap_content" android:id="@+id/rigaLongitudine"></TextView>
+    	</TableRow>
+    </TableLayout>
+    
+    <ImageButton 
+    	android:id="@+id/rigaRimuoviOrigine"
+    	android:src="@drawable/meno"
+    	android:layout_height="match_parent"
+    	android:layout_width="wrap_content"
+    	android:background="@android:color/transparent"/>    
+</LinearLayout>

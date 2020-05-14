@@ -1,0 +1,396 @@
+* DOING
+** Scelta automatica del fuso UTM in base al punto convertito
+
+Attenzione a questa cosa perche' se il punto convertito e' vicino ad un
+cambio di fuso la conversione potrebbe risultare fallata visto che il
+telefono non sa scegliere da solo il fuso giusto da applicare.
+
+Dare possibilita' di fissare il fuso ma lasciare come default automatico
+
+* TODO
+* TODO DECIDERE
+** Decidere se implementare sistema di riferimento MTM
+* DONE
+** Vari sistemi di coordinate nella schermata GPS
+** Trattamento delle opzioni unificato (secondo Android)
+** Support for the QTH system.
+This is a simple test:
+
+tc@box:~$ perl maidenhead_locator.perl JN52VC
+42.10417 11.79167
+
+See:
+http://www.fabinet.it/qth_locator.htm
+http://en.wikipedia.org/wiki/Maidenhead_Locator_System
+
+#!/usr/bin/perl -w
+# (c) 2012 Chris Ruvolo.  Licensed under a 2-clause BSD license.
+if($#ARGV < 0){
+  printf("Usage: $0 <grid>\n");
+  exit(1);
+}
+
+my @grid = split (//, uc($ARGV[0]));
+my $lon;
+my $lat;
+
+$lon = (ord($grid[0]) - ord('A')) * 20 - 180;
+$lat = (ord($grid[1]) - ord('A')) * 10 - 90;
+$lon += (ord($grid[2]) - ord('0')) * 2;
+$lat += (ord($grid[3]) - ord('0')) * 1;
+
+my $formatter;
+
+if ($#grid >= 5) {
+  # have subsquares
+  $lon += ((ord($grid[4])) - ord('A')) * 5/60;
+  $lat += ((ord($grid[5])) - ord('A')) * 2.5/60;
+  # move to center of subsquare
+  $lon += 2.5/60;
+  $lat += 1.25/60;
+  # not too precise
+  $formatter = "%.5f";
+} else {
+  # move to center of square
+  $lon += 1;
+  $lat += 0.5;
+  # even less precise
+  $formatter = "%.1f";
+}
+
+$lat = sprintf($formatter, $lat);
+$lon = sprintf($formatter, $lon);
+
+print "$lat $lon\n";
+
+** <2013-10-06 dom> Fix typo in the Result activity. The ED50 longitude was enunced as North!
+** <2013-09-07 sab 23:31> Rimuovere i valori della bolla
+** <2013-09-07 sab 22:53> Fix conversion error from North America coordinates to MGRS (FMN)
+** <2013-09-03 mar 15:14> Rimediare problema di rete che viene fuori cercando una trascodifica fra indirizzi e fix in OpenStreetMap (Francesco Maria Nimis)
+
+Per la licenza d'uso non sono autorizzato a sfruttare questo servizio di
+Google per OpenStreetMap e quindi, per loro, devo utilizzare Nominatum,
+che ha questa interfaccia:
+
+http://nominatim.openstreetmap.org/search/prato?format=json
+
+    [
+    {
+    "place_id":"98010870",
+    "licence":"Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http:\/\/www.openstreetmap.org\/copyright",
+    "osm_type":"relation",
+    "osm_id":"280245",
+    "boundingbox":["43.8157997131348","43.9495735168457","11.0131568908691","11.1696176528931"],
+    "lat":"43.880598","lon":"11.0969262",
+    "display_name":"Prato, PO, Tuscany, Italia, Unione Europea",
+    "class":"place",
+    "type":"city",
+    "importance":0.65935648203542,
+    "icon":"http:\/\/nominatim.openstreetmap.org\/images\/mapicons\/poi_place_city.p.20.png"
+    },
+    {"place_id":"97143900",
+    "licence":"Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http:\/\/www.openstreetmap.org\/copyright",
+    "osm_type":"relation",
+    "osm_id":"42619",
+    "boundingbox":["43.7583999633789","44.1124229431152","10.9641141891479","11.2128200531006"],
+    "lat":"43.93541175","lon":"11.0941604558958",
+    "display_name":"PO, Tuscany, Italia",
+    "class":"boundary",
+    "type":"administrative",
+    "importance":0.40918357512255,
+    "icon":"http:\/\/nominatim.openstreetmap.org\/images\/mapicons\/poi_boundary_administrative.p.20.png"
+    },
+    ...
+    ]
+
+Attenzione a una cosa strana: essendo la stringa di ricerca codificata
+all'interno dell'URL se ci sono degli spazi questi devono essere
+sostituiti da "%20" piuttosto che da "+", altrimenti il servizio
+nominatim non funziona. Strano ma vero.
+
+** <2013-09-03 mar 14:48> Salvare lo stato della mappa composita nel cambio di layout
+** <2013-09-03 mar 10:38> Capire bene il problema di rete che viene fuori cercando una trascodifica fra indirizzi e fix in Google Maps (Francesco Maria Nimis)
+
+Sembrerebbe che sia un problema iniziato da quando Google ha deprecato
+le API per Google Maps e che salta fuori spesso sui nuovi dispositivi
+che montano Android 4.
+Vedi qua:
+
+http://code.google.com/p/android/issues/detail?id=38009
+
+L'unico sistema di ovviare al problema e' uno workaround che sfrutta le API
+di Google Maps via JSON. Questo workaround figura direttamente nella soluzione
+al bug:
+
+    public static JSONObject getLocationInfo(String address) {
+
+    HttpGet httpGet = new HttpGet("http://maps.google.com/maps/api/geocode/json?address=" +address +"&ka&sensor=false");
+    HttpClient client = new DefaultHttpClient();
+    HttpResponse response;
+    StringBuilder stringBuilder = new StringBuilder();
+
+    try {
+    response = client.execute(httpGet);
+    HttpEntity entity = response.getEntity();
+    InputStream stream = entity.getContent();
+    int b;
+    while ((b = stream.read()) != -1) {
+    stringBuilder.append((char) b);
+    }
+    } catch (ClientProtocolException e) {
+    } catch (IOException e) {
+    }
+
+    JSONObject jsonObject = new JSONObject();
+    try {
+    jsonObject = new JSONObject(stringBuilder.toString());
+    } catch (JSONException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+    }
+
+    return jsonObject;
+    }
+
+    public static GeoPoint getGeoPoint(JSONObject jsonObject) {
+
+    Double lon = new Double(0);
+    Double lat = new Double(0);
+
+    try {
+
+    lon = ((JSONArray)jsonObject.get("results")).getJSONObject(0)
+    .getJSONObject("geometry").getJSONObject("location")
+    .getDouble("lng");
+
+    lat = ((JSONArray)jsonObject.get("results")).getJSONObject(0)
+    .getJSONObject("geometry").getJSONObject("location")
+    .getDouble("lat");
+
+    } catch (JSONException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+    }
+
+    return new GeoPoint((int) (lat * 1E6), (int) (lon * 1E6));
+
+    }
+
+
+    GeoPoint srcGeoPoint =getGeoPoint(getLocationInfo(fromAddress.replace("\n"," ").replace(" ", "%20")));
+    GeoPoint destGeoPoint =getGeoPoint(getLocationInfo(CalDescription.toAddress.replace("\n"," ").replace(" ", "%20")));
+
+Purtroppo gestisce solamente un indirizzo e non un gruppo, come faceva
+la API di Google.  Bisogna stare anche attenti a codificare
+correttamente i parametri, cosa che questo codice non fa.
+
+Comunque questi sono i risultati che questo servizio offre:
+
+    {
+       "results" : [
+          {
+             "address_components" : [
+                {
+                   "long_name" : "Piazza Duomo",
+                   "short_name" : "Piazza Duomo",
+                   "types" : [ "route" ]
+                },
+                {
+                   "long_name" : "Caserta",
+                   "short_name" : "Caserta",
+                   "types" : [ "locality", "political" ]
+                },
+                {
+                   "long_name" : "Caserta",
+                   "short_name" : "Caserta",
+                   "types" : [ "administrative_area_level_3", "political" ]
+                },
+                {
+                   "long_name" : "Caserta",
+                   "short_name" : "CE",
+                   "types" : [ "administrative_area_level_2", "political" ]
+                },
+                {
+                   "long_name" : "Campania",
+                   "short_name" : "Campania",
+                   "types" : [ "administrative_area_level_1", "political" ]
+                },
+                {
+                   "long_name" : "Italia",
+                   "short_name" : "IT",
+                   "types" : [ "country", "political" ]
+                },
+                {
+                   "long_name" : "81100",
+                   "short_name" : "81100",
+                   "types" : [ "postal_code" ]
+                }
+             ],
+             "formatted_address" : "Piazza Duomo, 81100 Caserta CE, Italia",
+             "geometry" : {
+                "bounds" : {
+                   "northeast" : {
+                      "lat" : 41.0741549,
+                      "lng" : 14.3341286
+                   },
+                   "southwest" : {
+                      "lat" : 41.0739663,
+                      "lng" : 14.3333004
+                   }
+                },
+                "location" : {
+                   "lat" : 41.0740485,
+                   "lng" : 14.3333833
+                },
+                "location_type" : "GEOMETRIC_CENTER",
+                "viewport" : {
+                   "northeast" : {
+                      "lat" : 41.0754095802915,
+                      "lng" : 14.3350634802915
+                   },
+                   "southwest" : {
+                      "lat" : 41.0727116197085,
+                      "lng" : 14.3323655197085
+                   }
+                }
+             },
+             "types" : [ "route" ]
+          },
+          {
+             "address_components" : [
+                {
+                   "long_name" : "Piazza Duomo",
+                   "short_name" : "Piazza Duomo",
+                   "types" : [ "route" ]
+                },
+                {
+                   "long_name" : "Lentini",
+                   "short_name" : "Lentini",
+                   "types" : [ "locality", "political" ]
+                },
+                {
+                   "long_name" : "Lentini",
+                   "short_name" : "Lentini",
+                   "types" : [ "administrative_area_level_3", "political" ]
+                },
+                {
+                   "long_name" : "Siracusa",
+                   "short_name" : "SR",
+                   "types" : [ "administrative_area_level_2", "political" ]
+                },
+                {
+                   "long_name" : "Sicilia",
+                   "short_name" : "Sicilia",
+                   "types" : [ "administrative_area_level_1", "political" ]
+                },
+                {
+                   "long_name" : "Italia",
+                   "short_name" : "IT",
+                   "types" : [ "country", "political" ]
+                },
+                {
+                   "long_name" : "96016",
+                   "short_name" : "96016",
+                   "types" : [ "postal_code" ]
+                }
+             ],
+             "formatted_address" : "Piazza Duomo, 96016 Lentini SR, Italia",
+             "geometry" : {
+                "bounds" : {
+                   "northeast" : {
+                      "lat" : 37.2855037,
+                      "lng" : 14.999094
+                   },
+                   "southwest" : {
+                      "lat" : 37.2849768,
+                      "lng" : 14.9983382
+                   }
+                },
+                "location" : {
+                   "lat" : 37.2852995,
+                   "lng" : 14.9987315
+                },
+                "location_type" : "GEOMETRIC_CENTER",
+                "viewport" : {
+                   "northeast" : {
+                      "lat" : 37.2865892302915,
+                      "lng" : 15.0000650802915
+                   },
+                   "southwest" : {
+                      "lat" : 37.2838912697085,
+                      "lng" : 14.9973671197085
+                   }
+                }
+             },
+             "types" : [ "route" ]
+          },
+          ....
+          }
+       ],
+       "status" : "OK"
+    }
+
+E' davvero un bell'incastro. e quindi bisogna forzatamente utilizzare il
+sistema di geocodifica di Google Maps HTTP solo come fallback, visto che
+ha pure un limite di richieste giornaliero da rispettare.
+
+Il codice poi deve essere modificato per interpretare tutti i risultati
+dati dal servizio.
+
+** <2013-09-03 mar 09:24> Includere il fuso utm nella schermata dei risultati (Francesco Maria Nimis)
+** <2013-09-02 lun 22:46> Capire il disallineamento delle lettere O e E nei punti cardinali (Francesco Maria Nimis)
+
+Il problema e' in questo codice:
+
+   // Questo disegna le lettere cardinali in modo disallineato
+   // ma ad occhio non capisco come mai. Questo proble
+   canvas.drawText("E", raggioCerchi+8, dimensioneTestoPiccolo/2, p);
+   canvas.drawText("O", -raggioCerchi-4-p.measureText("O"), dimensioneTestoPiccolo/2, p);
+
+lo ha rilevato Francesco Maria Nimis ma adesso, con occhi buoni, lo vedo
+anche io. Nonostante questo non capisco come mai.
+
+Forse ho capito. La dimensione del font in altezza non dipende dalla
+dimensione del font e bisogna utilizzare il metodo getTextBounds per
+farsi dare il piu' piccolo rettangolo che contiene il testo e poi da
+questo calcolare l'altezza.
+
+La cosa strana e' che questo rettangolo che viene calcolato ha il "top"
+negativo, il che costringe a fare un valore assoluto.
+
+Ma e' naturale! Dipende dalle proprieta' tipografiche del
+carattere... innanzitutto il carattere inizia dalla riga base e, visto
+che la y va verso il basso naturalmente cosi' fa il top...
+
+Comunque ora va bene. <2013-09-03 mar 09:06>
+
+** <2013-09-02 lun 22:55> [#A] Abilitare pulsante converti nonostante non sia ancora stata fatta una ricerca in Google Maps (Rito Pio Cassini)
+** <2013-09-02 lun 22:26> La scritta dei gradi va riportata ogni 30 oppure ogni 10 piuttosto che ogni 20 (Francesco Maria Nimis)
+** <2013-09-02 lun 22:25> Modificare i ringraziamenti per includere Francesco Maria Nimis nella bolla
+** <2013-09-02 lun 22:23> Ringraziamenti Giovanni Lombardo
+** Aggiornare data all'interno del file di aiuto
+** Calibrazione della bolla
+** La bolla non deve andare oltre il bordo
+** Scrivere i valori della bolla
+** Smussare i segnali dei sensori
+** Testare nuova infrastruttura per il rilascio
+* DONE qualcosa da capire
+** <2013-09-02 lun 22:57> [#A] Abilitare pulsante converti nonostante non sia ancora stata fatta una ricerca in OpenStreetMap (Rito Pio Cassini)
+
+Da quando ho introdotto il pin all'inizio della maschera la prima
+ricerca per indirizzo fallisce portando un centro della mappa diverso
+dalla locazione del pin.
+
+E' bastato cambiare il centro della mappa dopo aver messo il giusto
+livello di zoom per far funzionare tutto.
+
+Ho finito ora... <2013-09-03 mar 08:41>
+
+* DONE ma da tenere a mente perche' hanno caratteristiche importanti
+** <2013-09-07 sab 23:29> Rimettere a posto l'algoritmo dell'inerzia della bolla perche' non funziona bene su alcuni cellulari (Francesco Maria Nimis)
+
+Rimesso a posto implementando un filtro passa-basso implementato in modo discreto con
+una media esponenziale.
+
+Bisogna tarare il paramento alfa.
+

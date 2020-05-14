@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/mainLayout">
+
+		<TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:stretchColumns="1"
+			android:paddingTop="30px" android:paddingBottom="30px">
+			<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TextView android:id="@+id/textViewOrigineX" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_gauss_nord" android:layout_marginRight="5px"></TextView>
+				<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberSigned" android:id="@+id/editTextNord">
+					<requestFocus></requestFocus>
+				</EditText>
+			</TableRow>
+			<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TextView android:id="@+id/textViewOrigineY" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_gauss_est" android:layout_marginRight="5px"></TextView>
+				<EditText android:inputType="numberSigned" android:id="@+id/editTextEst" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+			</TableRow>
+			<TableRow android:layout_width="wrap_content" android:id="@+id/tableRow3" android:layout_height="wrap_content">
+				<TextView android:id="@+id/textViewOrigineY" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_gauss_descrizione" android:layout_marginRight="5px"></TextView>
+				<EditText android:id="@+id/editGaussDescrizione" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true"></EditText>
+			</TableRow>
+		</TableLayout>
+		<Button android:id="@+id/buttonConverti" android:text="@string/input_gauss_converti"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/>
+</LinearLayout>

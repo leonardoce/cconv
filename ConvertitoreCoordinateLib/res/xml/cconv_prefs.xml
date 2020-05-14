@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/log_cassini">
+        <Preference android:title="@string/configurazione_cassini_titolo" >
+            <intent
+                android:targetClass="it.interfree.leonardoce.convertitorecoordinatelib.GestioneOriginiCassiniActivity"
+                android:targetPackage="it.interfree.leonardoce.iconv"/>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/log_gauss">
+        <it.interfree.leonardoce.convertitorecoordinatelib.components.IntListPreference android:title="@string/configurazione_gauss_titolo"
+            android:key="fusoGauss"
+            android:dialogTitle="@string/configurazione_gauss_titolo"
+            android:entries="@array/fusi_array"
+            android:entryValues="@array/fusi_array_values"
+            android:defaultValue="0"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/log_utm">
+        <ListPreference android:title="@string/configurazione_utm_datum"
+            android:key="datumUTM"
+            android:dialogTitle="@string/configurazione_utm_datum"
+            android:entries="@array/utm_datum"
+            android:entryValues="@array/utm_datum_values"
+            android:defaultValue="ED50"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/stato_gps_bussola">
+        <CheckBoxPreference android:title="@string/stato_gps_indicatore_nord"
+            android:key="gps_nord"
+            android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/stato_gps_bolla"
+            android:key="gps_bolla"
+            android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/stato_gps_satelliti"
+            android:key="gps_satelliti"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/stato_gps_titolo">
+        <ListPreference android:title="@string/stato_gps_tipo_coordinate"
+            android:key="gps_coordinates"
+            android:defaultValue="latlong"
+            android:dialogTitle="@string/stato_gps_tipo_coordinate"
+            android:entries="@array/gps_coord_types"
+            android:entryValues="@array/gps_coord_values"/>
+    </PreferenceCategory>
+</PreferenceScreen>

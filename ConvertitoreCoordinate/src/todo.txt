@@ -1,0 +1,6 @@
+1) disattivazione della bussola
+2) se origine predefinita non si puo' cancellare
+3) una unica pagina di impostazioni
+
+-) non funziona la cancellazione dopo aver inserito un punto e aver fatto la conversione (quando Risultati viene aperta dopo una conversione)
+-) nella cancellazione delle origini è corretta la Label ""

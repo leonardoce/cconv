@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/menu_share"
+          android:icon="@drawable/ic_action_share"
+          android:title="@string/risultato_condividi"
+          yourapp:showAsAction="always" />
+    <item android:id="@+id/menu_salva_html"
+          android:title="@string/report_conversioni_salva"
+          yourapp:showAsAction="never" />
+    <item android:id="@+id/menu_salva_csv"
+          android:title="@string/report_conversioni_csv_salva"
+          yourapp:showAsAction="never" />
+    <item android:id="@+id/menu_cancella"
+          android:title="@string/report_conversioni_pulisci"
+          yourapp:showAsAction="never" />
+</menu>

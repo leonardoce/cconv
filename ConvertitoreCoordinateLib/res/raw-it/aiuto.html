@@ -1,0 +1,257 @@
+<html>
+<body>
+    <p>Il programma <b>iConv</b> pu&ograve; essere utilizzato per
+    convertire le Coordinate entro i Sistemi di Riferimento gestiti;
+    inoltre costruisce un report contenente le informazioni e i dati
+    di trasformazione e consente di acquisire un punto, utilizzando il GPS,
+    dopo aver valutato il numero di satelliti
+    attivi e l'intensit&agrave; di ricezione del segnale.
+    </p>
+    <p>
+    La precisione dei punti acquisiti attraverso il sistema GPS dipende
+    dalla sensibilit&agrave; del dispositivo stesso e dalle condizioni
+    atmosferiche.
+    </p>
+
+    <p>I Sistemi di Riferimento supportati sono:</p>
+    <ul>
+    <li>Cassini-Soldner (detto anche catastale);</li>
+    <li>Gauss-Boaga;</li>
+    <li>Latitudine e Longitudine;</li>
+    <li>UTM fuso 32,33,34 nei datum ED50 e WGS84;</li>
+    <li>MGRS;</li>
+    <li>Web Mercator.</li>
+    </ul>
+
+    <p>Le funzioni principali sono:</p>
+
+    <ul>
+    <li>conversione di coordinate da un Sistema di Riferimento agli altri;</li>
+    <li>acquisizione di un punto utilizzando il GPS;</li>
+    <li>configurazione del centro di emissione Cassini-Soldner;</li>
+    <li>scelta del fuso di riferimento Gauss-Boaga;</li>
+    <li>memorizzazione dei risultati con eventuale produzione di un report finale in formato HTML e CSV.</li>
+    </ul>
+
+<h1>Ringraziamenti</h1>
+
+<p>
+Grazie a <b>F. Calcaterra</b> per la segnalazione di un bug
+nella conversione fra Lat/Long e UTM utilizzando il
+datum WGS84.
+</p>
+
+<p>
+Grazie a <b>Rito Pio Cassini</b> per i consigli riguardanti il cambio
+di datum da WGS84 a ED50 e per le idee di integrazione di
+Google Maps.
+</p>
+
+<p>
+Grazie a <b>Francesco Maria Nimis</b> per una segnalazione di un bug
+nella conversione fra Lat/Long da GPS in formato UTM e per i molti consigli
+sull'interfaccia grafica della bussola e della bolla. Il Dott. Nimis ha altres&igrave; scoperto
+errori subdoli contribuendo alla stabilizzazione del programma.<br>
+Sarebbe difficile elencare qua tutti i consigli e le idee che ha proposto. Grazie di tutto!!
+</p>
+
+<p>
+Grazie a <b>Giovanni Lombardo</b> per i consigli riguardanti l'inserimento
+delle coordinate latitudine e longitudine.
+</p>
+
+<p>
+Grazie a <b>Marco Palumbi</b> per avermi fornito le grandi origini Cassini-Soldner.
+</p>
+
+<h1>Indicazioni d'uso della bussola</h1>
+
+<p>
+La qualit&agrave; dei dati acquisiti dipende dalla bont&agrave; del
+sensore presente nel proprio telefono.
+</p>
+
+<p>
+Nel caso ci fossero forti errori nella direzione indicata &egrave; possibile
+seguire una procedura di riavvio dei sensori che consiste nel puntare il telefono verso
+il cielo e tracciare la forma di un otto nell'aria.<br>
+Se questa procedura non funziona provare a ruotare il cellulare di 360 gradi
+e poi capovolgerlo.
+</p>
+
+<p>
+I dati rilevati dipendono dalla vicinanza di oggetti metallici. Per questa ragione
+&egrave; stata inserita, nella visualizzazione della bussola, l'indicazione
+della potenza del campo elettromagnetico rilevato. In natura questo valore si
+aggira fra i 40uT e i 50uT. Avvicinandosi ad un oggetto metallico questo valore
+aumenta.<br>
+Qualora il programma rilevi un'intensit&agrave; di campo troppo alta la scritta
+che indica la potenza del campo magnetico viene colorata di rosso ad indicare
+che il dato rilevato non &egrave; utile.
+</p>
+
+<p>
+    Grazie a <b>Nick C</b> per le varie segnalazioni a riguardo della
+    conversione di coordinate fra MGRS e LatLong nell'emisfero sud.
+</p>
+
+<h1>Novit&agrave;</h1>
+
+    <dl>
+        <dt>10/5/2020</dt>
+        <dd>Aggiornamento per nuove versioni di Android</dd>
+    </dl>
+
+    <dl>
+    <dt>10/8/2015</dt>
+    <dd>Consenso cookies per Unione Europea</dd>
+</dl>
+
+<dl>
+    <dt>4/7/2015</dt>
+    <dd>Correzione dell'algoritmo di conversione MGRS/LatLong per l'emisfero Sud</dd>
+</dl>
+
+<dl>
+<dt>28/6/2015</dt>
+<dd>Corretto errore di calcolo nella conversione da LatLong a MGRS</dd>
+<dd>Aggiunto output della conversione in minuti decimali</dd>
+</dl>
+
+<dl>
+<dt>9/1/2015</dt>
+<dd>Ulteriori correzioni per Android 2, funzione del registro.</dd>
+</dl>
+
+<dl>
+<dt>8/1/2015</dt>
+<dd>Ripristinata compatibilit&agrave; con sistemi basati su Android 2.</dd>
+</dl>
+
+<dl>
+<dt>3/1/2015</dt>
+<dd>Correzioni su algoritmi.</dd>
+</dl>
+
+<dl>
+<dt>27/12/2014</dt>
+<dd>Supporto per la proiezione Web Mercator;</dd>
+<dd>Migliorata interfaccia grafica ed introdotta la Action Bar.</dd>
+</dl>
+
+<dl>
+<dt>21/1/2014</dt>
+<dd>Possibilit&agrave; di condividere le coordinate convertite e il report delle coordinate.</dd>
+</dl>
+
+<dl>
+<dt>18/1/2014</dt>
+<dd>Correzione nella schermata delle impostazioni per il fuso Gauss/Boaga. 
+Le scritte Ovest/Est erano invertite.</dd>
+</dl>
+
+<dl>
+<dt>4/1/2014</dt>
+<dd>Migliorata la leggibilit&agrave; della schermata del GPS</dd>
+<dd>Dalla schermata del GPS si pu&ograve; inviare la posizione rilevata dal GPS
+tramite le applicazioni registrate nel telefono come SMS/Email etc</dd>
+</dl>
+
+<dl>
+<dt>20/11/2013</dt>
+<dd>Aggiunte le grandi origini cassini</dd>
+</dl>
+
+<dl>
+<dt>10/11/2013</dt>
+<dd>Calcolo automatico della zona UTM</dd>
+<dd>Schermata delle impostazioni unificata per tutti i sistemi di riferimento</dd>
+<dd>Adesso si pu&ograve; vedere, nella schermata della conversione da GPS, il punto corrente
+in uno dei sistemi di riferimento supportati.</dd>
+<dd>Si possono personalizzare le informazioni mostrate nella bussola</dd>
+</dl>
+
+
+<dl>
+<dt>06/10/2013</dt>
+<dd>Supportato il sistema dei locatori QTH in ingresso come coordinate Lat/Long.</dd>
+<dd>Corretto un errore sulla schermata dei risultati. Le coordinate ED50 venivano enunciato in modo errato.</dd>
+</dl>
+
+<dl>
+<dt>07/09/2013</dt>
+<dd>Correzioni nel disegno della bolla planare</dd>
+<dd>Corretto un errore che impediva la conversione in coordinate MGRS nel nord America</dd>
+</dl>
+
+<dl>
+<dt>03/09/2013</dt>
+<dd>Corretto qualche piccola imprecisione nel disegno della bussola</dd>
+<dd>Corretti errori nell'abilitazione del pulsante "Converti" in Google Maps e OpenStreetMap</dd>
+<dd>Mostrato il fuso UTM insieme al risultato della conversione</dd>
+<dd>Utilizzato un meccanismo di fallback nel caso nel quale il GeoCoder di Android non sia disponibile</dd>
+</dl>
+
+<dl>
+<dt>01/09/2013</dt>
+<dd>Integrazione totale con Google Maps che permette anche di spostare l'indicatore e di consultare le mappe ibride</dd>
+<dd>Integrazione di OpenStreetMap</dd>
+<dd>Corretto qualche piccola imprecisione nel disegno della bussola</dd>
+<dd>I gradi possono essere inseriti anche come gradi interi e minuti decimali</dd>
+<dd>Bolla planare con calibrazione</dd>
+</dl>
+
+<dl>
+<dt>10/08/2013</dt>
+<dd>Migliorata interfaccia della bussola con indicazione della prora</dd>
+<dd>Corretto un errore nella conversione fra WGS84 da GPS e UTM</dd>
+</dl>
+
+<dl>
+<dt>04/08/2013</dt>
+<dd>Aggiunta interfaccia per la conversione fra datum ED50 e WGS84/GPS</dd>
+<dd>Aggiunta interfaccia per l'inserimento delle coordinate da Google Maps</dd>
+</dl>
+
+<dl>
+<dt>13/11/2012</dt>
+<dd>Aggiunto supporto MGRS nella versione gratuita</dd>
+<dd>Form per i contatti</dd>
+</dl>
+
+<dl>
+<dt>25/08/2012</dt>
+<dd>La latitudine e la longitudine pu&ograve; essere inserita
+con il sistema sessadecimale e quello decimale</dd>
+</dl>
+
+<dl>
+<dt>19/08/2012</dt>
+<dd>Sistema di coordinate MGRS</dd>
+</dl>
+
+<dl>
+<dt>04/08/2012</dt>
+<dd>Correzione della conversione fra Lat/Long e UTM utilizzando il datum WGS84</dd>
+</dl>
+
+<dl>
+<dt>01/08/2012</dt>
+<dd>Correzione della conversione fra Lat/Long e UTF8</dd>
+<dd>Correzione della traduzione in inglese</dd>
+</dl>
+
+<dl>
+<dt>06/06/2012</dt>
+<dd>Aggiunta conversione in formato UTM con supporto per i datum
+ED50 e WGS84</dd>
+<dd>Aggiunta traduzione in inglese</dd>
+</dl>
+
+<dl>
+<dt>17/12/2011</dt>
+<dd>Aggiunto report in formato CSV</dd>
+</dl>
+
+</body>
+</html>

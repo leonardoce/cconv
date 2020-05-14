@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingLeft="10dp" android:paddingRight="10dp"
+  android:id="@+id/mainLayout">
+
+	<TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:stretchColumns="1"
+		android:paddingTop="30dp" android:paddingBottom="30dp">
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_mgrs_zona" android:layout_marginRight="5dp"/>
+			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:maxLength="2" android:id="@+id/editTextMgrsZona">
+				<requestFocus></requestFocus>
+			</EditText>
+		</TableRow>
+		
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_mgrs_banda" android:layout_marginRight="5dp"/>
+			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textCapCharacters" android:maxLength="2" android:id="@+id/editTextMgrsBanda"/>
+		</TableRow>
+		
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_mgrs_quadrante" android:layout_marginRight="5dp"/>
+			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textCapCharacters" android:maxLength="2" android:id="@+id/editTextMgrsQuadrante"/>
+		</TableRow>
+								
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_mgrs_est" android:layout_marginRight="5dp"></TextView>
+			<EditText android:inputType="numberSigned" android:id="@+id/editTextMgrsEst" android:layout_width="fill_parent" android:maxLength="5"  android:layout_height="wrap_content"></EditText>
+		</TableRow>
+								
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_mgrs_nord" android:layout_marginRight="5dp"></TextView>
+			<EditText android:inputType="numberSigned" android:id="@+id/editTextMgrsNord" android:layout_width="fill_parent" android:maxLength="5"  android:layout_height="wrap_content"></EditText>
+		</TableRow>
+					
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_mgrs_descrizione" android:layout_marginRight="5dp"></TextView>
+			<EditText android:id="@+id/editTextMgrsDescrizione" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+		</TableRow>
+	</TableLayout>
+	<Button android:id="@+id/buttonConverti" android:text="@string/input_mgrs_converti"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+include ':convertitorecoordinatecore'
+include ':ConvertitoreCoordinateLib'
+include ':ConvertitoreCoordinate'
+include ':ConvertitoreTest'

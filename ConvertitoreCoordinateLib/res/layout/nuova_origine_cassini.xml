@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:focusable="true" android:focusableInTouchMode="true">
+    
+	<it.interfree.leonardoce.convertitorecoordinatelib.components.TitoloView
+		 android:layout_width="match_parent"
+		 android:layout_height="wrap_content"	
+		 app:titolo="@string/configurazione_cassini_nuova_origine_titolo"/>
+	    
+	<ScrollView android:layout_width="match_parent" 
+  		android:layout_height="fill_parent"
+  		android:layout_weight="1">
+  		
+	  	<LinearLayout
+	  	    android:layout_width="match_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:orientation="vertical"
+      		android:paddingLeft="10px"
+  		 	android:paddingRight="10px">
+	  		
+			<LinearLayout
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+		  		android:paddingTop="20px"
+		  		android:paddingBottom="20px"
+				 android:orientation="horizontal">
+				<TextView android:text="@string/configurazione_cassini_nuova_origine_nome" 
+					android:layout_width="wrap_content"
+					android:paddingRight="10px"
+					android:layout_height="wrap_content"/>
+				<EditText android:id="@+id/txtNomeNuovaCassini"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:paddingBottom="10px"
+					android:singleLine="true"/>
+			
+			</LinearLayout>
+				
+		    <it.interfree.leonardoce.convertitorecoordinatelib.components.LatLongView 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/inputOrigineCassini"/>    
+		</LinearLayout>	    
+	</ScrollView>
+  		    	    	
+  	<LinearLayout 
+  		android:layout_width="match_parent" 
+  		android:layout_height="wrap_content"
+  		android:paddingLeft="10px"
+  		android:paddingRight="10px"
+  		android:orientation="vertical">
+			
+   	    <Button android:src="@drawable/piu"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/btInserisciCassini"
+	    	android:text="@string/configurazione_cassini_nuova_origine_salva"/>
+	</LinearLayout>
+</LinearLayout>

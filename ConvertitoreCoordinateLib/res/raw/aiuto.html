@@ -1,0 +1,242 @@
+<html>
+<body>
+<p><b>iConv</b> is a software that can convert coordinate into the
+supported reference systems.
+<b>iConv</b>, also, maintains a translations report who contains all
+the transformation data. You can also acquire a fix from the GPS system
+evaluating the satellite status and the intensity of the signal.
+</p>
+
+<p>
+The precision of the fixes acquired with the GPS system depends on
+the sensibility of your GPS and on the athmospheric conditions.
+</p>
+
+<p>The supported reference systems are:</p>
+<ul>
+<li>Cassini-Soldner (italian land register system);</li>
+<li>Gauss-Boaga;</li>
+<li>Latitude and Longitude;</li>
+<li>UTM timezone 32,33,34, using datum ED50 and WGS84;</li>
+<li>MGRS;</li>
+<li>Web Mercator.</li>
+</ul>
+
+<p>The main functionalities are:</p>
+
+<ul>
+<li>transformation between a reference system and another;</li>
+<li>fix acquisition from GPS;</li>
+<li>configuration of the emission origin of the Cassini-Soldner system;</li>
+<li>Gauss-Boaga timezone configuration;</li>
+<li>transformation registry that can be saved as HTML and CSV.</li>
+</ul>
+
+<h1>Compass manual</h1>
+
+<p>
+The quality of the received data depends on the quality of the
+sensors inside your smartphone.
+</p>
+
+<p>
+If you see that the calculated direction has big errors you can follow
+a procedure to reset your sensors.<br>
+This procedure consist in pointing your smartphone toward the sky and drawing an 8
+in the air.<br>If you have tried this procedure and the sensors aren't working
+you can rotate your smartphone 360 degree and turn it upside down.
+</p>
+
+<p>
+The magnetic sensor can be troubled by near metallic objects. For this reason under
+the compass we have displayed the power of the electro-magnetic field recorded.
+The natural power is between 40uT and 50uT. If you are near a metallic object
+this values will grow bigger.<br>
+If the power of the electro-magnetic field is too high the power of the electro-magnetic
+field if drew in red and this means that the direction recorded can be wrong.
+</p>
+
+<h1>Acknowledgement</h1>
+
+<p>
+Thanks to <b>F. Calcaterra</b> for the bug report regarding UTM
+conversion.
+</p>
+<p>
+Thanks to <b>Rito Pio Cassini</b> for the advices regarding the
+datum change between WGS84 and ED50 and for the ideas of
+Google Maps integration.
+</p>
+<p>
+Thanks to <b>Francesco Maria Nimis</b> for a bug report regarding the
+conversion between WGS84 from GPS and UTM and for the many suggestions regarding the
+compass and the bubble level. Mr Nimis also reported many subtle bugs.
+</p>
+<p>
+Thanks to <b>Giovanni Lombardo</b> for the suggestions regarding the
+data-entry of lat/long fixes.
+</p>
+<p>
+Thanks to <b>Sebastiano Bonanno</b> for the suggestions regarding the
+GPS screen and coordinate system.
+</p>
+<p>
+Thanks to <b>Marco Palumbi</b> for the predefined Cassini origins.
+</p>
+<p>Thanks to <b>Nick C</b> for the bug reports on the MGRS conversion in southern emisphere</p>
+
+<h1>News</h1>
+
+<dl>
+    <dt>10/5/2020</dt>
+    <dd>Update to more recent Android systems</dd>
+</dl>
+
+    <dl>
+    <dt>10/8/2015</dt>
+    <dd>Cookies content for EU citizens</dd>
+</dl>
+
+<dl>
+    <dt>4/7/2015</dt>
+    <dd>Fixes in the MGRS and UTM conversions in the Southern Emisphere</dd>
+</dl>
+
+<dl>
+<dt>28/6/2015</dt>
+<dd>Fixed an issue in the LatLong to MGRS conversion.</dd>
+<dd>Added decimal minutes output</dd>
+</dl>
+
+<dl>
+<dt>9/1/2015</dt>
+<dd>Fixed compatibility with Android 2 systems.</dd>
+</dl>
+
+<dl>
+<dt>8/1/2015</dt>
+<dd>Fixed compatibility with Android 2 systems.</dd>
+</dl>
+
+<dl>
+<dt>3/1/2015</dt>
+<dd>Fixes and more precise UTM conversion.</dd>
+</dl>
+
+<dl>
+<dt>27/12/2014</dt>
+<dd>Web mercator projection support;</dd>
+<dd>Graphical restyling with action bar.</dd>
+</dl>
+
+<dl>
+<dt>21/6/2014</dt>
+<dd>Coordinate and report sharing.</dd>
+</dl>
+
+<dl>
+<dt>18/6/2014</dt>
+<dd>Fixed bug in the preferences screen on the Gauss/Boaga timezone setting. 
+The West and Eeast timezones were inverted.</dd>
+</dl>
+
+
+<dl>
+<dt>4/1/2014</dt>
+<dd>Better graphics on the GPS screen</dd>
+<dd>From the GPS screen you can share the current position</dd>
+</dl>
+
+<dl>
+<dt>20/11/2013</dt>
+<dd>Added standard Cassini origins</dd>
+</dl>
+
+<dl>
+<dt>10/11/2013</dt>
+<dd>Automatic calculation of the UTM timezone</dd>
+<dd>Unified settings screen</dd>
+<dd>You can choose the coordinate system for the GPS status activity</dd>
+<dd>You can customize the informations displayed in the GPS screen</dd>
+</dl>
+
+<dl>
+<dt>06/10/2013</dt>
+<dd>Support for the Maidenhead Locators System</dd>
+<dd>Fix for the result activity. The latitude was enounced as North/South.</dd>
+</dl>
+
+<dl>
+<dt>07/09/2013</dt>
+<dd>Fixes in the bubble level</dd>
+<dd>Fixes in the MGRS conversion</dd>
+</dl>
+
+<dl>
+<dt>03/09/2013</dt>
+<dd>Fixed some drawing issues in the campass</dd>
+<dd>Fixed conversion from OpenStreetMap and Google Maps</dd>
+<dd>UTM zone display in the conversion result</dd>
+<dd>Workaround for Android Geocoding API</dd>
+</dl>
+
+<dl>
+<dt>01/09/2013</dt>
+<dd>Full Google Maps integration. Now you can drag the indicator and see hybrid maps.</dd>
+<dd>OpenStreetMap OpenStreetMap</dd>
+<dd>Fixed some minor drawing issue in the compass</dd>
+<dd>Degrees can be inserted with integral degrees and decimal minutes</dd>
+<dd>Bubble level with tuning</dd>
+</dl>
+
+<dl>
+<dt>10/08/2013</dt>
+<dd>Improved compass interface</dd>
+<dd>Fixed a bug for the conversion between WGS84 from GPS and UTM</dd>
+<dl>
+
+<dl>
+<dt>04/08/2013</dt>
+<dd>Added interface for datum change between ED50 and WGS84/GPS</dd>
+<dd>Added interface to select a fix from an address with google maps</dd>
+</dl>
+
+<dt>13/11/2012</dt>
+<dd>Added MGRS support in the ad supported release</dd>
+<dd>Feedback form</dd>
+</dl>
+
+<dt>25/08/2012</dt>
+<dd>Latitude and longitude can be entered using decimal degree and
+the sessagesimal system</dd>
+</dl>
+
+<dl>
+<dt>19/08/2012</dt>
+<dd>Coordinate System MGRS</dd>
+</dl>
+
+<dl>
+<dt>04/08/2012</dt>
+<dd>Fixed conversion from Lat/Long to UTM using WGS84 datum</dd>
+</dl>
+
+<dl>
+<dt>01/08/2012</dt>
+<dd>Fixed conversion from Lat/Long and UTF8</dd>
+<dd>English localization fixes</dd>
+</dl>
+
+<dl>
+<dt>06/06/2012</dt>
+<dd>Added UTM coordinate system with support of ED50 and WGS84</dd>
+<dd>Added English localization</dd>
+</dl>
+
+<dl>
+<dt>17/12/2011</dt>
+<dd>Added CSV report</dd>
+</dl>
+
+</body>
+</html>

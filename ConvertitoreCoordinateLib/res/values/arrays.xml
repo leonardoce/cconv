@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fusi_array">
+        <item>@string/configurazione_gauss_timezone_ovest</item>
+        <item>@string/configurazione_gauss_timezone_est</item>
+    </string-array>
+    <string-array name="fusi_array_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="utm_datum">
+        <item>ED50</item>
+        <item>WGS84</item>
+    </string-array>
+    <string-array name="utm_datum_values">
+        <item>ED50</item>
+        <item>WGS84</item>
+    </string-array>
+
+    <string-array name="gps_coord_types">
+        <item>@string/input_latlong_titolo</item>
+        <item>@string/input_utm_titolo</item>
+        <item>@string/input_mgrs_titolo</item>
+        <item>@string/input_gauss_titolo</item>
+        <item>@string/input_cassini_titolo</item>
+    </string-array>
+
+    <string-array name="gps_coord_values">
+        <item>latlong</item>
+        <item>utm</item>
+        <item>mgrs</item>
+        <item>gauss</item>
+        <item>cassini</item>
+    </string-array>
+
+    <string-array name="gps_coord_types_ads">
+        <item>@string/input_latlong_titolo</item>
+        <item>@string/input_mgrs_titolo</item>
+        <item>@string/input_gauss_titolo</item>
+        <item>@string/input_cassini_titolo</item>
+    </string-array>
+
+    <string-array name="gps_coord_values_ads">
+        <item>latlong</item>
+        <item>mgrs</item>
+        <item>gauss</item>
+        <item>cassini</item>
+    </string-array>
+
+    <!-- non cambiare l'ordine qua -->
+    <string-array name="scelte_imposta_bolla">
+        <item>@string/stato_gps_calibra</item>
+        <item>@string/stato_gps_reset</item>
+    </string-array>
+</resources>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iConv</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="annulla">Cancel</string>
+    <string name="chiudi">Close</string>
+    <string name="ovest">West</string>
+    <string name="est">East</string>
+    <string name="nord">North</string>
+    <string name="sud">South</string>
+    <string name="lat">Lat</string>
+    <string name="longs">Long</string>
+    <string name="latp">Lat:</string>
+    <string name="longp">Long:</string>
+    <string name="nordp">North:</string>
+    <string name="estp">East:</string>
+
+    <string name="log_datum_utm">Datum UTM</string>
+    <string name="log_zona_utm">UTM Zone</string>
+    <string name="log_utm">UTM</string>
+    <string name="log_fuso_gauss">Gauss-Boaga time zone</string>
+    <string name="log_origine_cassini">Cassini origin</string>
+    <string name="log_descrizione">Description</string>
+    <string name="log_tipo_conversione">Source coordinate system</string>
+    <string name="log_latlong">Latitude and Longitude, WGS84/GPS</string>
+    <string name="log_latlong_dec">Decimal Latitude and Longitude, WGS84/GPS</string>
+    <string name="log_latlong_min_dec">Decimal Minutes Latitude and Longitude, WGS84/GPS</string>
+    <string name="log_latlong_ed50">Latitude and Longitude, ED50</string>
+    <string name="log_latlong_dec_ed50">Decimal Latitude and Longitude, ED50</string>
+    <string name="log_latlong_min_dec_ed50">Decimal Minutes Latitude and Longitude, ED50</string>
+    <string name="log_cassini">Cassini coordinate</string>
+    <string name="log_gauss">Gauss &amp; Boaga Coordinate</string>
+    <string name="log_data_punto">Date</string>
+    <string name="log_mgrs">MGRS</string>
+
+    <string name="lay_scegli_orientamento">Choose the orientation</string>
+    <string name="lay_latitudine">Latitude</string>
+    <string name="lay_longitudine">Longitude</string>
+    <string name="lay_descrizione_stato">"Status</string>
+    <string name="lay_grid">Locator</string>
+
+    <string name="configurazione_cassini_titolo">Cassini Soldner Origin</string>
+    <string name="configurazione_gauss_titolo">Gauss Boaga Timezone</string>
+    <string name="configurazione_utm_titolo">Change UTM zone</string>
+    <string name="configurazione_spinner_zona_utm">UTM zone</string>
+    <string name="configurazione_utm_datum">Datum</string>
+
+    <string name="configurazione_cassini_nome">Name:</string>
+    <string name="configurazione_cassini_lat">Latitude:</string>
+    <string name="configurazione_cassini_long">Longitude:</string>
+
+    <string name="configurazione_cassini_nuova_origine_titolo">New Origin Cassini-Soldner</string>
+    <string name="configurazione_cassini_nuova_origine_salva">Save</string>
+    <string name="configurazione_cassini_nuova_origine_nome">Name</string>
+
+    <string name="configurazione_gauss_timezone_est">Timezone East</string>
+    <string name="configurazione_gauss_timezone_ovest">Timezone West</string>
+
+    <string-array name="zone_utm">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="datum_utm">
+        <item>ED50</item>
+        <item>WGS84</item>
+    </string-array>
+
+    <string name="input_cassini_titolo">Cassini Soldner</string>
+    <string name="input_cassini_x">X</string>
+    <string name="input_cassini_y">Y</string>
+    <string name="input_cassini_converti">Convert</string>
+    <string name="input_cassini_descrizione">Description</string>
+
+    <string name="input_gauss_titolo">Gauss Boaga</string>
+    <string name="input_gauss_nord">North</string>
+    <string name="input_gauss_est">East</string>
+    <string name="input_gauss_converti">Convert</string>
+    <string name="input_gauss_descrizione">Description</string>
+
+    <string name="input_latlong_titolo">Latitude and longitude</string>
+    <string name="input_ed50_titolo">Lat/long, ED50 Datum</string>
+    <string name="input_latlong_ed50">Lat/long, ED50 Datum</string>
+    <string name="input_latlong_gpsoff">Fix from GPS</string>
+    <string name="input_latlong_gpson">Fix from GPS</string>
+    <string name="input_latlong_converti">Convert</string>
+    <string name="input_latlong_descrizione">Description</string>
+    <string name="input_latlong_dd">dd</string>
+    <string name="input_latlong_mm">mm</string>
+    <string name="input_latlong_ss">ss</string>
+
+    <string name="lay_sistema_inserimento_coordinate">Input</string>
+	<string name="sistema_gradi">d/m/s</string>
+	<string name="sistema_gradi_decimali">d</string>
+    <string name="sistema_minuti_decimali">d/m</string>
+    <string name="sistema_qth">QTH</string>
+
+    <string name="input_utm_titolo">UTM coordinate</string>
+    <string name="input_utm_zona">Zone</string>
+    <string name="input_utm_y">North</string>
+    <string name="input_utm_x">East</string>
+    <string name="input_utm_descrizione">Description</string>
+    <string name="input_utm_converti">Convert</string>
+
+    <string name="input_mgrs_titolo">MGRS</string>
+    <string name="input_mgrs_zona">Zone</string>
+    <string name="input_mgrs_banda">Band</string>
+	<string name="input_mgrs_quadrante">Square</string>
+    <string name="input_mgrs_nord">North</string>
+    <string name="input_mgrs_est">East</string>
+	<string name="input_mgrs_descrizione">Description</string>
+    <string name="input_mgrs_converti">Convert</string>
+
+    <string name="input_webmercator_titolo">Web Mercator</string>
+    
+    <string name="input_osm_titolo">Lat/long from OpenStreetMap</string>
+    <string name="input_osm_descrizione">Description</string>
+    <string name="input_osm_loc">Search:</string>
+    <string name="input_osm_locbt">Go</string>
+    <string name="input_osm_choose">Choose a location</string>
+
+    <string name="stato_gps_titolo">GPS</string>
+    <string name="stato_gps_satelliti_attivi">Active Satellite</string>
+    <string name="stato_gps_time_to_fix">Seconds to next fix</string>
+    <string name="stato_gps_ultimo_punto">Point</string>
+    <string name="stato_gps_fuori_servizio">GPS out of service</string>
+    <string name="stato_gps_non_disponibile">GPS not available</string>
+    <string name="stato_gps_attivo">GPS active</string>
+    <string name="stato_gps_precisione">Precision</string>
+    <string name="stato_gps_converti">Convert</string>
+    <string name="stato_gps_heading">Orientation</string>
+    <string name="stato_gps_calibra">Tune</string>
+    <string name="stato_gps_reset">Reset</string>
+    <string name="stato_gps_send">Send</string>
+
+    <string name="stato_gps_bussola">Compass</string>
+    <string name="stato_gps_indicatore_nord">North indicator</string>
+    <string name="stato_gps_bolla">Bubble</string>
+    <string name="stato_gps_satelliti">Satellites</string>
+    <string name="stato_gps_tipo_coordinate">Coordinate system</string>
+
+    <string name="stato_gps_sharing">\nMy GPS position is %1$s, with an accuracy of %2$.2f meters.
+My position in UTM coordinates is %3$s.\n\nYou can see my position on Google Maps: %5$s\n\n%4$s</string>
+
+    <string name="stato_gps_sharing_title">My GPS position, %1$s</string>
+
+    <string name="risultato_conversione_titolo">Result</string>
+    <string name="risultato_conversione_latlong">Latitude and longitude, WGS84/GPS</string>
+    <string name="risultato_conversione_ed50">Latitude and longitude, ED50</string>
+    <string name="risultato_conversione_gaussboaga">Gauss Boaga</string>
+    <string name="risultato_conversione_catastali">Cassini Soldner</string>
+    <string name="risultato_conversione_utm">UTM</string>
+    <string name="risultato_conversione_web_mercator">Web Mercator</string>
+    <string name="risultato_descrizione">Description</string>
+    <string name="risultato_x">X:</string>
+    <string name="risultato_y">Y:</string>
+    <string name="risultato_inserisci_nuovo">Add new</string>
+    <string name="risultato_indietro">Back</string>
+    <string name="risultato_cancella">Cancel</string>
+    <string name="risultato_home">Home</string>
+    <string name="risultato_conversione_mgrs">MGRS</string>
+    <string name="risultato_condividi">Share</string>
+    <string name="zona_utm_p">UTM zone</string>
+
+    <string name="registro_titolo">Report</string>
+    <string name="registro_genera_html">Generate report</string>
+
+    <string name="report_conversioni_titolo">Conversions Report</string>
+    <string name="report_conversioni_salva">Save as HTML</string>
+    <string name="report_conversioni_csv_salva">Save as CSV</string>
+    <string name="report_conversioni_pulisci">Clear all</string>
+
+    <string name="pag_input_gauss">Gauss Boaga</string>
+    <string name="pag_input_cassini">Cassini Soldner</string>
+    <string name="pag_input_latlong">Lat. Long. WGS84/GPS</string>
+    <string name="pag_impostazioni">Settings</string>
+    <string name="pag_input_ed50">Lat. Long ED50</string>
+    <string name="pag_input_gmaps">Lat. Long from GMaps</string>
+    <string name="pag_input_osm">Lat. Long from OpenStreetMap</string>
+    <string name="pag_input_utm">UTM</string>
+    <string name="pag_input_gps">Fix from GPS</string>
+    <string name="pag_input_mgrs">MGRS</string>
+    <string name="pag_input_web_mercator">Web Mercator</string>
+    <string name="pag_impostazioni_gauss">Gauss Boaga</string>
+    <string name="pag_impostazioni_cassini">Cassini Soldner</string>
+    <string name="pag_impostazioni_utm">UTM</string>
+    <string name="pag_registro">Report</string>
+    <string name="pag_aiuto">Help and news</string>
+    <string name="pag_store">Store</string>
+
+    <string name="msg_scheda_sd_non_presente">Insert the SD card</string>
+    <string name="msg_errore_scrittura_sd">Error writing on the SD card: </string>
+    <string name="msg_file_scritto">Registry saved correctly to your Downloads folder on the SD card</string>
+    <string name="msg_file_registro_esistente">The registry file is already existing. Should I overwrite it?</string>
+    <string name="msg_file_non_scritto_perche_esistente">The registry file is has not been written because it was already existing</string>
+    <string name="msg_cancella_origine">Shoud I delete the origin %1$s?</string>
+    <string name="msg_origine_predefinita">This is a system origin and can not be deleted</string>
+    <string name="msg_pulisci_registro">Should I delete all the conversion registry?</string>
+    <string name="msg_cancella_riga_log">Should I delete this point?</string>
+    <string name="msg_coordinata_modo_sbagliato">The coordinate has been inserted in the wrong way</string>
+    <string name="msg_coordinata_non_congruente">Fix not congruent</string>
+    <string name="msg_nome_origine_non_valido">Origin name not valid</string>
+    <string name="msg_mgrs_zona_non_valida">Wrong MGRS zone</string>
+    <string name="msg_mgrs_banda_non_valida">Wrong MGRS band</string>
+    <string name="msg_mgrs_quadrante_no_valido">Wrong MGRS Square ID</string>
+    <string name="msg_no_internet">Network error</string>
+    <string name="msg_no_address">Unknown address</string>
+
+    <string name="titolo_help">About iConv</string>
+
+    <!-- La pubblicita' -->
+    <string name="MY_AD_UNIT_ID">a14ebe22c210f09</string>
+</resources>
