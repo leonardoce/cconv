@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import it.interfree.leonardoce.convertitorecoordinatelib.config.CurrentConfiguration;
@@ -31,6 +33,8 @@ import it.interfree.leonardoce.iconv.math.Punto3D;
 import it.interfree.leonardoce.iconv.math.PuntoUTM;
 import it.interfree.leonardoce.iconv.utils.OSMUtility;
 import it.interfree.leonardoce.iconv.utils.Indirizzo;
+
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -168,6 +172,12 @@ public class InputOSMActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         editIndirizzo.requestFocus();
+
+        org.osmdroid.config.IConfigurationProvider osmConf = org.osmdroid.config.Configuration.getInstance();
+        File basePath = new File(getCacheDir().getAbsolutePath(), "osmdroid");
+        osmConf.setOsmdroidBasePath(basePath);
+        File tileCache = new File(osmConf.getOsmdroidBasePath().getAbsolutePath(), "tile");
+        osmConf.setOsmdroidTileCache(tileCache);
     }
 
     // ------------------------------------
