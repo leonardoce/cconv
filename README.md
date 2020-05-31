@@ -17,6 +17,7 @@ API usage policy. The Open Street Map integration is still available.
 
 ## How to install the application
 
+You can directly download your APK here: https://github.com/leonardoce/cconv/releases
 
 ## How to contribute
 
