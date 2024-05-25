@@ -13,7 +13,8 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 29
+    compileSdk 34
+    namespace "it.interfree.leonardoce.convertitorecoordinatelib"
 
     compileOptions {
 	sourceCompatibility JavaVersion.VERSION_1_7
@@ -44,6 +45,10 @@ android {
         release.setRoot('build-types/release')
     }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 28
+    }
+    buildFeatures {
+        renderScript true
+        aidl true
     }
 }

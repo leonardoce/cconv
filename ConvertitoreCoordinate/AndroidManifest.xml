@@ -4,6 +4,9 @@
     android:versionCode="28"
     android:versionName="5.0" >
 
+    <uses-sdk
+        android:targetSdkVersion="34" />
+
     <uses-feature
         android:name="android.hardware.location.gps"
         android:required="false" />
@@ -39,7 +42,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light" >
 
-        <activity android:name=".StartupActivity" >
+        <activity android:name=".StartupActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -169,7 +172,7 @@
             android:label="@string/pag_impostazioni" >
         </activity>
 
-        <provider
+        <!--provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="it.interfree.leonardoce.fileprovider"
             android:exported="false"
@@ -177,7 +180,7 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
-        </provider>
+        </provider-->
     </application>
 
 </manifest>
