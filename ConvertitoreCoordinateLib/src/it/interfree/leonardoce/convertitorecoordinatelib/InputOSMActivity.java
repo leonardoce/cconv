@@ -2,6 +2,7 @@ package it.interfree.leonardoce.convertitorecoordinatelib;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Point;
@@ -67,9 +68,9 @@ public class InputOSMActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.input_osm);
-        Configuration.getInstance().setUserAgentValue(BuildConfig.APPLICATION_ID);
+        Configuration.getInstance().setUserAgentValue(getApplicationContext().getPackageName());
 
-	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // -------------------
         // Prende i componenti
