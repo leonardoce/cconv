@@ -37,7 +37,11 @@ public class TipiConversioniAdapter extends BaseAdapter {
         scelte.add(creaCambioView(c.getString(R.string.pag_input_web_mercator), R.drawable.web_mercator, InputWebMercatorActivity.class));
         
         scelte.add(creaCambioView(c.getString(R.string.pag_input_mgrs), R.drawable.mgrs, InputMgrsActivity.class));
-        scelte.add(creaCambioView(c.getString(R.string.pag_input_gps), R.drawable.antenna, StatoGpsActivity.class));
+
+        // Questa cosa ha bisogno davvero di Java 10
+        Scelta sceltaFix = creaCambioView(c.getString(R.string.pag_input_gps), R.drawable.antenna, StatoGpsActivity.class);
+        sceltaFix.richiedeGPS = true;
+        scelte.add(sceltaFix);
 
         // Questa voce e' accessibile anche dalla ActionBar ma la lascio perche' gli utenti
         // ormai sono abituati a trovarla qua
@@ -88,6 +92,11 @@ public class TipiConversioniAdapter extends BaseAdapter {
     public Intent getDestinazione(int position)
     {
         return tipiConversione[position].intent;
+    }
+
+    public boolean getRichiedeGPS(int position)
+    {
+        return tipiConversione[position].richiedeGPS;
     }
 
     // create a new ImageView for each item referenced by the Adapter
@@ -154,5 +163,8 @@ public class TipiConversioniAdapter extends BaseAdapter {
     	public String nome;
     	public int icona;
     	public Intent intent;
+        // Se true, verra' richiesto all'utente
+        // di permettere l'uso del GPS
+        public boolean richiedeGPS;
     }
 }

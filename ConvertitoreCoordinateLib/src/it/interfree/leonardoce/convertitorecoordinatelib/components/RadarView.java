@@ -16,13 +16,15 @@ import android.graphics.Typeface;
 import android.graphics.Paint.Align;
 import android.graphics.Path;
 import android.graphics.Rect;
-import android.location.GpsSatellite;
-import android.location.GpsStatus;
+import android.location.GnssStatus;
 import android.location.Location;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+
+import androidx.annotation.NonNull;
 
 public class RadarView extends View {
     private Dati datiDaDisegnare;
@@ -41,8 +43,8 @@ public class RadarView extends View {
         gestorePreferenze = new OriginiCassiniManager(context);
     }
 
-    public void setStatoGps(GpsStatus pStatus, Location loc) {
-        datiDaDisegnare.updateFromGpsStatus(pStatus);
+    public void setStatoGps(@NonNull GnssStatus status, Location loc) {
+        datiDaDisegnare.updateFromGpsStatus(status);
         invalidate();
     }
 
@@ -217,13 +219,21 @@ public class RadarView extends View {
         p.setStyle(Paint.Style.FILL_AND_STROKE);
         if ( gestorePreferenze.getGpsMostraSatelliti() ) {
             for (DatiSatellite sat : datiDaDisegnare.satelliti) {
-                // Trasparenza in base al segnale
+                Log.i("GPS", "passo qua " + sat.toString());
+                // Raggio in base al segnale
                 // da 0 a 30 trasparenza, oltre 30 colore pieno
                 int raggioSatellite = 0;
-                if (sat.snr >= 30) {
+                if (sat.cn0db >= 30) {
                     raggioSatellite = 15;
                 } else {
-                    raggioSatellite = (int) ((15 * sat.snr) / 30);
+                    raggioSatellite = (int) ((15 * sat.cn0db) / 30);
+                }
+
+                // Per disegnare tutti i satelliti, anche quelli che di fatto
+                // non hanno segnale, il cerchio viene disegnato con una
+                // dimensione minima
+                if (raggioSatellite < 7) {
+                    raggioSatellite = 7;
                 }
 
                 // Verde se usato, rosso se non utilizzato
@@ -386,52 +396,22 @@ public class RadarView extends View {
             satelliti = new LinkedList<DatiSatellite>();
         }
 
-        public void updateFromGpsStatus(GpsStatus stat) {
-            if (stat != null) {
-                satelliti.clear();
-                for (GpsSatellite sat : stat.getSatellites()) {
-                    DatiSatellite dati = new DatiSatellite(sat);
-                    satelliti.add(dati);
-                }
-            }
-        }
-
-        @SuppressWarnings("unused")
-        private void initPerProve() {
-            bussola = 20;
-
+        public void updateFromGpsStatus(@NonNull GnssStatus status) {
+            Log.i("radar", "Io passo di qua, ed ho " + status.getSatelliteCount() + "satelliti");
             satelliti.clear();
-            satelliti.add(new DatiSatellite(1, 20, 80, 50, true));
-            satelliti.add(new DatiSatellite(2, 50, 20, 30, true));
-            satelliti.add(new DatiSatellite(3, 200, 40, 15, true));
-            satelliti.add(new DatiSatellite(4, 260, 30, 65, false));
+            for(int i=0; i<status.getSatelliteCount(); i++) {
+                var dati = new DatiSatellite(
+                        status.getAzimuthDegrees(i),
+                        status.getElevationDegrees(i),
+                        status.getCn0DbHz(i),
+                        status.usedInFix(i)
+                );
+                satelliti.add(dati);
+            }
         }
     }
 
-    private static class DatiSatellite {
-        //int prn;
-        float azimuth;
-        float elevation;
-        float snr;
-        boolean used;
-
-        public DatiSatellite(GpsSatellite sat) {
-            //prn = sat.getPrn();
-            azimuth = sat.getAzimuth();
-            elevation = sat.getElevation();
-            snr = sat.getSnr();
-            used = sat.usedInFix();
-        }
-
-        public DatiSatellite(int prn, float azimuth, float elevation,
-                             float snr, boolean used) {
-            super();
-            //this.prn = prn;
-            this.azimuth = azimuth;
-            this.elevation = elevation;
-            this.snr = snr;
-            this.used = used;
-        }
+    private record DatiSatellite(float azimuth, float elevation, float cn0db, boolean used) {
     }
 }
 

@@ -1,0 +1,8 @@
+                                                                                                    Caused by: java.lang.SecurityException: uid 10196 does not have android.permission.ACCESS_COARSE_LOCATION or android.permission.ACCESS_FINE_LOCATION.
+                                                                                                    	at android.os.Parcel.createExceptionOrNull(Parcel.java:3057)
+                                                                                                    	at android.os.Parcel.createException(Parcel.java:3041)
+                                                                                                                     Caused by: java.lang.SecurityException: uid 10196 does not have android.permission.ACCESS_COARSE_LOCATION or android.permission.ACCESS_FINE_LOCATION.
+                                                                                                                     	at android.os.Parcel.createExceptionOrNull(Parcel.java:3057)
+                                                                                                                     	at android.os.Parcel.createException(Parcel.java:3041)
+                                                                                                                     	at android.os.Parcel.readException(Parcel.java:3024)
+                                                                                   	at android.os.Parcel.readException(Parcel.java:3024)

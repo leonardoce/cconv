@@ -6,6 +6,27 @@ repositories {
 }
 
 dependencies {
+    // Questa robaccia serve per i permessi
+
+    def fragment_version = "1.7.1"
+
+    // Java language implementation
+    implementation "androidx.fragment:fragment:$fragment_version"
+    // Kotlin
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Testing Fragments in Isolation
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+
+    def activity_version = "1.9.0"
+
+    // Java language implementation
+    implementation "androidx.activity:activity:$activity_version"
+    // Kotlin
+    implementation "androidx.activity:activity-ktx:$activity_version"
+
+    // --- fine robaccia dei permessi
+
     api fileTree(dir: 'libs', include: '*.jar')
     api project(':convertitorecoordinatecore')
     implementation "androidx.appcompat:appcompat:1.1.0"
@@ -17,8 +38,8 @@ android {
     namespace "it.interfree.leonardoce.convertitorecoordinatelib"
 
     compileOptions {
-	sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+	    sourceCompatibility JavaVersion.VERSION_16
+        targetCompatibility JavaVersion.VERSION_16
     }
 
     sourceSets {
@@ -44,11 +65,13 @@ android {
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
-    defaultConfig {
-        minSdkVersion 28
-    }
     buildFeatures {
         renderScript true
         aidl true
+    }
+
+    defaultConfig {
+        targetSdk 34
+        minSdk 29
     }
 }

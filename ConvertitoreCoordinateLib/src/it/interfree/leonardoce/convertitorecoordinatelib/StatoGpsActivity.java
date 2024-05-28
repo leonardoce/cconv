@@ -19,15 +19,19 @@ import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.location.GnssStatus;
 import android.location.GpsSatellite;
 import android.location.GpsStatus;
 import android.location.GpsStatus.Listener;
@@ -42,11 +46,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.util.Log;
 
-public class StatoGpsActivity extends Activity implements LocationListener,
-        Listener, SensorEventListener {
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+public class StatoGpsActivity extends AppCompatActivity implements LocationListener,
+        SensorEventListener {
     private Location lastLocation;
     private RadarView radar;
-    private GpsStatus lastStatus;
+    private GnssStatus lastStatus;
     private LocationManager locationManager;
     private SensorManager sensorManager;
     private Sensor sensoreMagnetometro, sensoreAccelerometro;
@@ -82,6 +94,8 @@ public class StatoGpsActivity extends Activity implements LocationListener,
 
     @SuppressWarnings("unused")
     private static String TAG = "StatoGpsActivity";
+
+    private GnssStatus.Callback gpsCallback;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -142,7 +156,7 @@ public class StatoGpsActivity extends Activity implements LocationListener,
                     builder.setItems(R.array.scelte_imposta_bolla, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            if (i==0) {
+                            if (i == 0) {
                                 calibrazioneBolla();
                             } else {
                                 resetBolla();
@@ -167,13 +181,35 @@ public class StatoGpsActivity extends Activity implements LocationListener,
 
         lastDeltaRoll = gestorePreferenze.getCalibrazioneRoll();
         lastDeltaPitch = gestorePreferenze.getCalibrazionePitch();
+
+        gpsCallback = new GnssStatus.Callback() {
+            @Override
+            public void onStarted() {
+                Log.d("GNSS", "Started");
+            }
+
+            @Override
+            public void onStopped() {
+                Log.d("GNSS", "Stopped");
+            }
+
+            @Override
+            public void onFirstFix(int ttffMillis) {
+                Log.d("GNSS", String.format("First fix %d", ttffMillis));
+            }
+
+            @Override
+            public void onSatelliteStatusChanged(@NonNull GnssStatus status) {
+                StatoGpsActivity.this.onSatelliteStatusChanged(status);
+            }
+        };
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        locationManager.removeGpsStatusListener(this);
         locationManager.removeUpdates(this);
+        locationManager.unregisterGnssStatusCallback(gpsCallback);
         sensorManager.unregisterListener(this);
     }
 
@@ -181,29 +217,44 @@ public class StatoGpsActivity extends Activity implements LocationListener,
     protected void onResume() {
         super.onResume();
         lastTimeStamp = System.currentTimeMillis();
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            Log.d("PERMISSIONS", "The user denied the permission request ACCESS_FINE_LOCATION");
+            finish();
+            return;
+        }
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            Log.d("PERMISSIONS", "The user denied the permission request ACCESS_COARSE_LOCATION");
+            finish();
+            return;
+        }
+
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
                 100L, 0f, this);
-        locationManager.addGpsStatusListener(this);
+        locationManager.registerGnssStatusCallback(gpsCallback);
+
         sensorManager.registerListener(this, sensoreMagnetometro,
                 SensorManager.SENSOR_DELAY_UI);
         sensorManager.registerListener(this, sensoreAccelerometro,
                 SensorManager.SENSOR_DELAY_UI);
     }
 
-    @Override
-    public void onGpsStatusChanged(int event) {
-        lastStatus = locationManager.getGpsStatus(lastStatus);
+    public void onSatelliteStatusChanged(@NonNull GnssStatus status) {
+        lastStatus = status;
         radar.setStatoGps(lastStatus, lastLocation);
 
-        int satellitiUsati = 0, satelliti = 0;
-        for (GpsSatellite sat : lastStatus.getSatellites()) {
-            if (sat.usedInFix()) {
-                satellitiUsati++;
+        int satelliteCount = lastStatus.getSatelliteCount();
+        int usedSatelliteCount = 0;
+        for(int i=0; i<satelliteCount; i++) {
+            if(lastStatus.usedInFix(i)) {
+                usedSatelliteCount++;
             }
-            satelliti++;
         }
-        txtSatellitiTotali.setText("" + satelliti);
-        txtSatellitiUsati.setText("" + satellitiUsati);
+        txtSatellitiTotali.setText(
+                String.format(Locale.getDefault(), "%d", satelliteCount));
+        txtSatellitiUsati.setText(
+                String.format(Locale.getDefault(), "%d", usedSatelliteCount));
     }
 
     private void aggiornaPrecisione() {
